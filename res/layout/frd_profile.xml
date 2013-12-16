@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+         <com.igeo.igeolink.UpMenu
+        android:layout_width="fill_parent"
+        android:layout_height="75px"
+    	/>
+    
+ 
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <com.google.android.maps.MapView
+	   	    		 android:id="@+id/frd_profile_map"
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="200dp"
+	                 android:enabled="true"
+	                 android:clickable="false"
+	                 android:apiKey="0kjfIgcpoDJ1ET19mseEfl5x5_Lzyn--TRiOXfQ"
+	                 
+	                 />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+
+        
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+		        android:id="@+id/thumbnail"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginRight="5dip"
+		        android:background="@layout/image_bg"
+		         android:layout_marginLeft="10dp"
+		        android:padding="3dip" >
+
+		        <ImageView
+                    android:id="@+id/frd_profile_img1"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                   
+                    android:src="@drawable/camera_a" />
+    </LinearLayout>
+
+                
+
+                <TextView
+                    android:id="@+id/frd_profile_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                
+            </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/frd_progile_albumBut1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.29"
+                android:layout_marginTop="10dp"
+                android:text="Album" />
+
+            <Button
+                android:id="@+id/frd_profile_but1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.29"
+                android:layout_marginLeft="50dp"
+                android:text="Write Message"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+             android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/frd_profile_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/frd_profile_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+             android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+        </LinearLayout>
+  	<ViewFlipper android:id="@+id/frd_profile_flipper" 
+         android:layout_width="fill_parent" 
+         android:layout_height="fill_parent"
+         android:layout_gravity="center"
+         android:layout_marginBottom="0dip">
+        <LinearLayout 
+            android:id="@+id/frd_profile_load1"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="30dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/album"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content" >
+	        
+        </LinearLayout>
+
+        
+</ViewFlipper>
+    </LinearLayout>
+
+</LinearLayout>

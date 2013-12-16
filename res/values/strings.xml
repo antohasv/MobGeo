@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">IGeo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings1e3f60</string>
+    <string name="title_activity_igeo_link">IGeoLink49729e</string>
+    <string name="serverIP">192.168.0.100</string>
+
+</resources>
